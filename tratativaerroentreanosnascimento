@@ -1,0 +1,19 @@
+
+def main():
+    
+
+    while True:
+        nomeCompleto = input("Digite seu nome completo: ")
+        try:
+            anoNascimento = int(input("Digite seu ano de nascimento (entre 1922 e 2021): "))
+            if anoNascimento < 1922 or anoNascimento > 2021:
+                print("Ano de nascimento não corresponde ao solicitado. Tente novamente.")
+                continue
+            #idade = 2023 - (anoNascimento)
+            print("Olá,", nomeCompleto ,"! Você possui ou completará" , 2023 - anoNascimento , "anos em 2023.")
+            break
+        except ValueError:
+                print("Oops! Tente novamente.")
+
+if __name__ == "__main__":
+    main()
